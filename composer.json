@@ -1,0 +1,21 @@
+{
+    "name": "prestashop/order17vat",
+    "license": "AFL-3.0",
+    "authors": [
+      {
+        "name": "Yiannis K"
+      }
+    ],
+    "description": "Add extra vat 17% field on order page",
+    "autoload": {
+      "psr-4": {
+        "PrestaShop\\Module\\Order17Vat\\": "src/"
+      }
+    },
+    "license": "MIT",
+    "type": "prestashop-module",
+    "config": {
+      "prepend-autoloader": false
+    }
+  }
+  

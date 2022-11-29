@@ -1,0 +1,8 @@
+# @see https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/#how-to-map-an-action-of-your-controller-to-a-uri
+order17vat_toggle_is_vat_17:
+  path: order17vat/{orderId}/toggle-is-vat-17
+  methods: [POST]
+  defaults:
+    _controller: 'PrestaShop\Module\Order17Vat\Controller\Admin\Order17VatController::toggleIsOrder17VatAction'
+  requirements:
+    orderId: \d+

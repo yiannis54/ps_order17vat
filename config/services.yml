@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    public: true
+  order17vat.repository.vat:
+    class: 'PrestaShop\Module\Order17Vat\Repository\VatRepository'
+    arguments:
+      - '@doctrine.dbal.default_connection'
+      - '%database_prefix%'
